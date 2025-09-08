@@ -10,7 +10,7 @@ const gameData = [
         tags: ['action', 'adventure'],
         rating: 4.5,
         players: 2340,
-        src: 'games/space-adventure/index.html',
+        src: '../files/2048/index.html',
         difficulty: 3,
         category: 'action'
     },
