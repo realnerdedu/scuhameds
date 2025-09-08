@@ -3,10 +3,10 @@
 // Sample game data - you can modify this array to add/remove games
 const gameData = [
     {
-        id: 'space-adventure',
-        title: 'Space Adventure',
-        description: 'Explore the galaxy in this thrilling space exploration game with stunning visuals and epic battles.',
-        image: 'https://images.unsplash.com/photo-1446776877081-d282a0f896e2?w=400',
+        id: '2048',
+        title: '2048',
+        description: 'Merge blocks to accumulate the highest number block',
+        image: '../files/2048/thumb.png',
         tags: ['action', 'adventure'],
         rating: 4.5,
         players: 2340,
@@ -15,8 +15,8 @@ const gameData = [
         category: 'action'
     },
     {
-        id: 'puzzle-master',
-        title: 'Puzzle Master',
+        id: '1v1.space',
+        title: '1v1.Space',
         description: 'Challenge your mind with increasingly difficult puzzles that will test your logic and creativity.',
         image: 'https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?w=400',
         tags: ['puzzle', 'brain'],
@@ -37,66 +37,6 @@ const gameData = [
         src: 'games/neon-racer/index.html',
         difficulty: 2,
         category: 'arcade'
-    },
-    {
-        id: 'tower-defense',
-        title: 'Tower Defense Pro',
-        description: 'Defend your base from waves of enemies using strategic tower placement and upgrades.',
-        image: 'https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400',
-        tags: ['strategy', 'defense'],
-        rating: 4.6,
-        players: 2150,
-        src: 'games/tower-defense/index.html',
-        difficulty: 5,
-        category: 'strategy'
-    },
-    {
-        id: 'pixel-platformer',
-        title: 'Pixel Platformer',
-        description: 'Jump, run, and collect coins in this retro-style platformer with challenging levels.',
-        image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=400',
-        tags: ['platformer', 'retro'],
-        rating: 4.2,
-        players: 1680,
-        src: 'games/pixel-platformer/index.html',
-        difficulty: 3,
-        category: 'arcade'
-    },
-    {
-        id: 'word-wizard',
-        title: 'Word Wizard',
-        description: 'Expand your vocabulary and test your word skills in this addictive word puzzle game.',
-        image: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400',
-        tags: ['puzzle', 'word'],
-        rating: 4.4,
-        players: 980,
-        src: 'games/word-wizard/index.html',
-        difficulty: 2,
-        category: 'puzzle'
-    },
-    {
-        id: 'cyber-warrior',
-        title: 'Cyber Warrior',
-        description: 'Fight through digital landscapes in this intense cyberpunk action game with RPG elements.',
-        image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=400',
-        tags: ['action', 'rpg'],
-        rating: 4.7,
-        players: 2890,
-        src: 'games/cyber-warrior/index.html',
-        difficulty: 4,
-        category: 'action'
-    },
-    {
-        id: 'memory-matrix',
-        title: 'Memory Matrix',
-        description: 'Test and improve your memory with this challenging brain training game featuring unique patterns.',
-        image: 'https://images.unsplash.com/photo-1559526324-593bc073d938?w=400',
-        tags: ['puzzle', 'memory'],
-        rating: 4.1,
-        players: 1245,
-        src: 'games/memory-matrix/index.html',
-        difficulty: 3,
-        category: 'puzzle'
     }
 ];
 
