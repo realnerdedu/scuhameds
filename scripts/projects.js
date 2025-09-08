@@ -17,12 +17,12 @@ const gameData = [
     {
         id: '1v1.space',
         title: '1v1.Space',
-        description: 'Challenge your mind with increasingly difficult puzzles that will test your logic and creativity.',
-        image: 'https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?w=400',
+        description: '1v1SPACE, similar to 1v1.LOL, an entertaining battle royale browser game.',
+        image: '../files/1v1space/splash.png',
         tags: ['puzzle', 'brain'],
         rating: 4.8,
         players: 1850,
-        src: 'games/puzzle-master/index.html',
+        src: '../files/1v1space/index.html',
         difficulty: 4,
         category: 'puzzle'
     },
