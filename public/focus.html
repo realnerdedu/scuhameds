@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Focus - SCUHA</title>
+    <link rel="stylesheet" href="styles/focus.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="game-overlay">
+        <div class="overlay-header">
+            <div class="game-title" id="gameTitle">Loading...</div>
+            <div class="overlay-controls">
+                <button class="control-btn" id="fullscreenBtn" title="Fullscreen">
+                    <i class="fas fa-expand"></i>
+                </button>
+                <button class="control-btn" id="homeBtn" title="Return Home">
+                    <i class="fas fa-home"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="game-container">
+        <iframe 
+            id="gameFrame" 
+            src="" 
+            frameborder="0" 
+            allowfullscreen
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+        </iframe>
+        
+        <div class="loading-screen" id="loadingScreen">
+            <div class="loading-content">
+                <div class="loading-spinner"></div>
+                <h2>Loading Game...</h2>
+                <p>Please wait while we prepare your gaming experience</p>
+            </div>
+        </div>
+        
+        <div class="error-screen" id="errorScreen" style="display: none;">
+            <div class="error-content">
+                <i class="fas fa-exclamation-triangle"></i>
+                <h2>Game Loading Error</h2>
+                <p>Unable to load the requested game. Please try again or return to the projects page.</p>
+                <button class="btn btn-primary" onclick="window.location.href='projects.html'">
+                    <i class="fas fa-arrow-left"></i> Back to Projects
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/focus.js"></script>
+</body>
+</html>

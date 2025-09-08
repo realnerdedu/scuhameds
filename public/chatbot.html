@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbot - SCUHA Gaming Hub</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/chatbot.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>SCUHA</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <i class="fas fa-home"></i> Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link">
+                        <i class="fas fa-gamepad"></i> Projects
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="chatbot.html" class="nav-link active">
+                        <i class="fas fa-robot"></i> Chatbot
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="settings.html" class="nav-link">
+                        <i class="fas fa-cog"></i> Settings
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="help.html" class="nav-link">
+                        <i class="fas fa-question-circle"></i> Help
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="chat-container">
+            <div class="chat-sidebar">
+                <div class="chat-header">
+                    <h2>Gaming Assistant</h2>
+                    <button class="new-chat-btn" id="newChatBtn">
+                        <i class="fas fa-plus"></i> New Chat
+                    </button>
+                </div>
+                
+                <div class="chat-history" id="chatHistory">
+                    <div class="history-section">
+                        <h3>Recent Conversations</h3>
+                        <div class="history-list" id="historyList">
+                            <!-- Chat history items will be populated here -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quick-actions">
+                    <h3>Quick Help</h3>
+                    <button class="quick-btn" data-message="Tell me about the games available">
+                        <i class="fas fa-gamepad"></i> Browse Games
+                    </button>
+                    <button class="quick-btn" data-message="How do I save my game progress?">
+                        <i class="fas fa-save"></i> Save Progress
+                    </button>
+                    <button class="quick-btn" data-message="What are the keyboard shortcuts?">
+                        <i class="fas fa-keyboard"></i> Shortcuts
+                    </button>
+                    <button class="quick-btn" data-message="I need help with game controls">
+                        <i class="fas fa-question"></i> Game Help
+                    </button>
+                </div>
+            </div>
+
+            <div class="chat-main">
+                <div class="chat-messages" id="chatMessages">
+                    <div class="welcome-message">
+                        <div class="bot-avatar">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="message-content">
+                            <h3>Welcome to SCUHA Gaming Assistant! 🎮</h3>
+                            <p>I'm here to help you with games, controls, tips, and any questions you might have. Feel free to ask me anything!</p>
+                            <div class="suggested-questions">
+                                <button class="suggestion-btn" data-message="What games can I play?">What games can I play?</button>
+                                <button class="suggestion-btn" data-message="How do I use fullscreen mode?">How do I use fullscreen?</button>
+                                <button class="suggestion-btn" data-message="Tell me about game ratings">Game ratings info</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat-input-container">
+                    <div class="typing-indicator" id="typingIndicator" style="display: none;">
+                        <div class="typing-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <span>Assistant is typing...</span>
+                    </div>
+                    
+                    <div class="chat-input-wrapper">
+                        <textarea 
+                            id="chatInput" 
+                            placeholder="Ask me anything about games..." 
+                            rows="1"></textarea>
+                        <button id="sendBtn" class="send-btn">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/chatbot.js"></script>
+</body>
+</html>
