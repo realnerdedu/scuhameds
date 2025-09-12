@@ -116,10 +116,20 @@ class ScuhamedsApp {
         const currentPath = window.location.pathname;
         document.querySelectorAll('.nav-link').forEach(link => {
             const href = link.getAttribute('href');
-            if (href === currentPath || (currentPath === '/' && href === '/')) {
+            link.classList.remove('active');
+            
+            // Match current page with nav links
+            if ((currentPath === '/' || currentPath === '/index.html') && href === '/') {
                 link.classList.add('active');
-            } else {
-                link.classList.remove('active');
+            } else if (currentPath.includes('/projects') && href === '/projects') {
+                link.classList.add('active');
+            } else if (currentPath.includes('/chatbot') && href === '/chatbot') {
+                link.classList.add('active');
+            } else if (currentPath.includes('/settings') && href === '/settings') {
+                link.classList.add('active');
+            } else if (currentPath.includes('/focus') && href === '/projects') {
+                // Focus page should highlight games/projects nav
+                link.classList.add('active');
             }
         });
     }
