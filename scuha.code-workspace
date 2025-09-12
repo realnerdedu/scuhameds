@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../scuha"
+		},
+		{
+			"path": "../../../Downloads/3kh0-lite-main/projects"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "scuha"
+	}
+}

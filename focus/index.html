@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game - Scuhameds</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1>Scuhameds</h1>
+            </div>
+            <div class="nav-links">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/projects" class="nav-link">Games</a>
+                <a href="/chatbot" class="nav-link">Chatbot</a>
+                <a href="/settings" class="nav-link">Settings</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="focus-container">
+            <div class="game-header">
+                <div class="game-info">
+                    <a href="/projects" class="back-button">
+                        <i class="fas fa-arrow-left"></i>
+                        Back to Games
+                    </a>
+                    <h1 class="current-game-title">Loading Game...</h1>
+                </div>
+                <div class="game-controls">
+                    <button class="control-button refresh-btn" title="Refresh Game">
+                        <i class="fas fa-redo"></i>
+                        Refresh
+                    </button>
+                    <button class="control-button fullscreen-btn" title="Toggle Fullscreen">
+                        <i class="fas fa-expand"></i>
+                        Fullscreen
+                    </button>
+                </div>
+            </div>
+
+            <div class="game-container">
+                <iframe class="game-frame" src="about:blank" title="Game Frame">
+                    <p>Your browser doesn't support iframes. Please use a modern browser to play games.</p>
+                </iframe>
+            </div>
+
+            <div class="game-details">
+                <div class="game-instructions">
+                    <h3>Game Instructions</h3>
+                    <div class="instructions-content">
+                        <p>Use keyboard and mouse to control the game. Press F11 or use the fullscreen button for the best experience.</p>
+                        <ul>
+                            <li>Arrow Keys or WASD - Movement</li>
+                            <li>Space - Jump/Action</li>
+                            <li>Mouse - Aim/Click</li>
+                            <li>ESC - Pause (if available)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Scuhameds. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/focus.js"></script>
+</body>
+</html>

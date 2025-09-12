@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games - Scuhameds</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1>Scuhameds</h1>
+            </div>
+            <div class="nav-links">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/projects" class="nav-link active">Games</a>
+                <a href="/chatbot" class="nav-link">Chatbot</a>
+                <a href="/settings" class="nav-link">Settings</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="games-container">
+            <div class="page-header">
+                <h1 class="page-title">Available Games</h1>
+                <p class="page-subtitle">Choose from our collection of unblocked games</p>
+            </div>
+
+            <div class="games-filter">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Games</button>
+                    <button class="filter-btn" data-filter="arcade">Arcade</button>
+                    <button class="filter-btn" data-filter="puzzle">Puzzle</button>
+                    <button class="filter-btn" data-filter="action">Action</button>
+                    <button class="filter-btn" data-filter="classic">Classic</button>
+                </div>
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search games..." id="game-search">
+                </div>
+            </div>
+
+            <div class="games-grid" id="games-grid">
+                <!-- Games will be dynamically loaded here -->
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Scuhameds. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/projects.js"></script>
+</body>
+</html>
